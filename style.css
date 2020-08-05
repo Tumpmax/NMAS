@@ -1,0 +1,131 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+
+#bubble, #Vector_16, #Vector_17, #Vector_18 {
+  animation: 3s bounce infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+@keyframes bounce {
+  60%{
+    height: 600px;
+    width: 57px;
+    transform: translateY(24px);
+  }
+}
+#poneytail {
+  animation: tail 3s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes tail {
+  from{
+  transform: translateX(0%);
+}
+  to{
+    transform: translateX(9%);
+
+  }
+}
+#head {
+  animation: nod 3s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes nod {
+  from{
+  transform: translateX(0%);
+}
+  to{
+    transform: translateX(6%);
+
+  }
+}
+#neck {
+  animation: tilt 3s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes tilt {
+  from{
+  transform: translateX(0%);
+}
+  to{
+    transform: translateX(-6%);
+
+  }
+}
+#bun {
+  animation: roll 3s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes roll {
+  from{
+  transform: translateX(0%);
+}
+  to{
+    transform: translateX(6%);
+
+  }
+}
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+   font-size: 1px;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  /*background: #55ACEE;*/
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  /*background: #55ACEE;*/
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  /*background: #c2151e;*/
+  color: white;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}

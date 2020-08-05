@@ -1,0 +1,246 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Roboto', sans-serif;
+}
+/*nav{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  }*/
+
+
+
+.logo{
+    text-transform:  uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    grid-column: 2/3;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+color: rgb(226, 226, 226);
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 14px;
+}
+.trio{
+  display: none;
+  cursor: pointer;
+}
+.trio div{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.7s ease;
+
+}
+@media screen and (max-width:1024px){
+  .nav-links{
+    width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+      overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: linear-gradient(to left, #f5b042, darkgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform .5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .trio{
+    display: block;
+  }
+}
+.nav-active{
+   transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+p {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: center;
+  }
+h2 {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+h3 {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+h4 {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+body {
+  background: linear-gradient(to left, #f5b042, darkgrey);
+  font-family: 'Roboto', serif;
+      font-size: 24px;
+    }
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+
+}
+.topnav a {
+  float: left;
+  color: rgb(242, 242, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(221, 221, 221);
+  color: black;
+}
+.topnav a.active {
+  background-color: rgb(132, 28, 201);
+  color: white;
+}
+table {
+  margin: auto;
+  border: 2px solid black;
+  width: auto;
+}
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+.callout-header {
+  padding: 25px 15px;
+  background: rgb(85, 85, 85);
+  font-size: 30px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.callout-container {
+  padding: 15px;
+  background-color: rgb(204, 204, 204);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+.closebtn:hover {
+  color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.gwd-page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gwd-page-content {
+  background-color: transparent;
+  transform: perspective(700px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-style: preserve-3d;
+  position: absolute;
+}
+.gwd-page-wrapper {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translateZ(0px);
+}
+.gwd-taptocall-e019 {
+  position: absolute;
+  width: 200px;
+  height: 140px;
+  left: 397px;
+  top: 636px;
+}
+#footer {
+     position:fixed;
+     left:0px;
+     bottom:0px;
+     height:30px;
+     width:100%;
+     font-size: 1px;
+  }
+
+  /* IE 6 */
+   * html #footer {
+     position:absolute;
+     top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+  }

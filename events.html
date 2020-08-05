@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="XA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <title>Events</title>
+  <meta name="generator" content="Google Web Designer 8.0.3.0603">
+  <meta name="template" content="Expandable 3.0.0">
+
+
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+ <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+</head>
+
+<body class="document-body">
+  <nav>
+    <div class="logo">
+      <h4>NMAS</h4>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="C:\xampp\htdocs\test_site\Test site/home.html">Home</a>
+        </li>
+        <li>
+          <a href="C:\xampp\htdocs\test_site\about/about.html">About</a>
+        </li>
+        <li>
+          <a href="C:\xampp\htdocs\test_site\contact/contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="trio">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+  </nav>
+  <h2>Never Meet A Stranger Ministry, Inc.</h2><br>
+
+  <h3>Latest Events</h3>
+  <ul>
+    <li><strong>CYA Gathering - Sept. 19, 2020</strong></li>
+    <!-- Button code -->
+    <div title="Add to Calendar" class="addeventatc">
+      Add to Calendar
+      <span class="start">09/19/2020 10:00 AM</span>
+      <span class="end">09/19/2020 12:00 PM</span>
+      <span class="timezone">America/New_York</span>
+      <span class="title">CYA Gathering</span>
+      <span class="description">Zoom version - Details listed below</span>
+      <span class="organizer">Shantrell Otummkpo</span>
+      <span class="organizer_email">nmas.ministry@gmail.com</span>
+    </div>
+  </ul>
+  <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
+      <div class="gwd-page-content page1-content"></div>
+    </gwd-page>
+  </gwd-pagedeck>
+
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+  <script src="apps.js"></script>
+</body>
+<br><br><br><br>
+<footer>
+<p><img src="C:\xampp\htdocs\test_site\assets/copyright-symbol.png" width="1%"/>Copyright 2020 Never Meet A Stranger Ministry, Inc </p>
+</footer>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <title>About</title>
+  <meta name="generator" content="Google Web Designer 8.0.3.0603">
+  <meta name="template" content="Expandable 3.0.0">
+
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-image">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+
+  <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="14" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+</head>
+
+<body class="document-body">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <h4>NMAS</h4>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="C:\xampp\htdocs\test_site\Test site/home.html">Home</a>
+        </li>
+        <li>
+          <a href="C:\xampp\htdocs\test_site\contact/contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="trio">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+  </nav>
+  <div>
+  <gwd-image source="C:\xampp\htdocs\test_site\assets/clasped-hands.jpg" style="width: 100% height: 15%" id="clasped-hands"></gwd-image>
+</div>
+  <!---Callout--->
+  <div class="callout">
+    <div class="callout-header">Latest Events</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+    <div class="callout-container">
+      <p>Check the calendar for our latest events
+        <a href="C:\xampp\htdocs\test_site\about\events/events.html">
+        Learn more</a></p>
+    </div>
+  </div>
+  <h1>Never Meet A Stranger Ministry, Inc.</h1><br>
+
+  <h1>Our History</h1>
+  <p>
+    NMAS was started by Shantrell Otummkpo on 3/10/2020 and her foundational goal was to assist women in realizing their God-given talents and gifts. NMAS was birthed from a strong desire to help others by creating an atmosphere where God’s love, strength, and peace resides - which will facilitate mental, emotional, and spiritual growth.
+  </p><br>
+  <br>
+
+  <h1>NMAS Board of Directors</h1>
+  <h2>Shantrell Otummkpo</h2>
+  <h3>Founder and President</h3>
+  <p>
+    Shantrell is a New Orleans native and the founder and President of NMAS. She has a background in Accounting and is the chief driving force behind this organization.
+  </p><br>
+
+  <h2>Edidiong Otummkpo</h2>
+  <h3>Treasurer</h3>
+  <p>
+    Edidiong is a Boston, Massachusetts native and the Treasurer of NMAS. He has a background in Business Management from Kennesaw State University in Georgia.
+  </p><br>
+
+  <h2>Deidre Reeder</h2>
+  <h3>Secretary</h3>
+  <p>
+    Deidre is a New Orleans native and the Secretary of NMAS. She assists the organization in its business affairs.
+  </p><br>
+  <br>
+
+  <h1>Resources and Programs</h1><br>
+
+  <p style="text-align: center;">
+    All resources and program information located
+    <a href="C:\xampp\htdocs\test_site\about\resources/resources.html">
+        here</a>
+  </p>
+  <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
+      <div class="gwd-page-content page1-content"></div>
+    </gwd-page>
+  </gwd-pagedeck>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+  <script src="apps.js"></script>
+</body>
+<br><br><br><br>
+<footer>
+<p><img src="C:\xampp\htdocs\test_site\assets/copyright-symbol.png" width="1%"/>Copyright 2020 Never Meet A Stranger Ministry, Inc </p>
+</footer>
+</html>
